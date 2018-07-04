@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.zyzxxx</groupId>
+	<artifactId>TestDemo</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1</version>
+	<name>TestDemo</name>
+	<url>http://maven.apache.org</url>
+	<!-- <dependencies> <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+		<version>3.8.1</version> <scope>test</scope> </dependency> </dependencies> 
+		<build> <finalName>TestDemo</finalName> </build> -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>testa</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<classifier>com.demo.testa</classifier>
+							<includes>
+								<include>**/com/demo/testa/**</include>
+							</includes>
+						</configuration>
+					</execution>
+					<execution>
+						<id>testb</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<classifier>com.demo.testb</classifier>
+							<includes>
+								<include>**/com/demo/testb/**</include>
+							</includes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
