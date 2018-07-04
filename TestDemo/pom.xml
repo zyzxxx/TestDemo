@@ -38,7 +38,7 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>testa</id>
+						<id>com.demo.testa</id>
 						<goals>
 							<goal>jar</goal>
 						</goals>
@@ -51,7 +51,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>testb</id>
+						<id>com.demo.testb</id>
 						<goals>
 							<goal>jar</goal>
 						</goals>
