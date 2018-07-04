@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.zyzxxx</groupId>
-	<artifactId>testa</artifactId>
+	<artifactId>testb</artifactId>
 	<version>0.0.1</version>
 
-	<name>testa</name>
-	<description>testa</description>
+	<name>testb</name>
+	<description>testb</description>
 	<url>https://github.com/zyzxxx/TestDemo</url>
 
 	<licenses>
