@@ -32,30 +32,6 @@
 		<url>https://github.com/zyzxxx/TestDemo</url>
 	</scm>
 
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>testa</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-						<phase>package</phase>
-						<configuration>
-							<classifier>com.demo.testa</classifier>
-							<includes>
-								<include>**/com/demo/testa/**</include>
-							</includes>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
-
-
 	<profiles>
 		<profile>
 			<id>release</id>
@@ -67,31 +43,10 @@
 						<artifactId>maven-source-plugin</artifactId>
 						<executions>
 							<execution>
-								<id>testa</id>
-								<goals>
-									<goal>jar</goal>
-								</goals>
 								<phase>package</phase>
-								<configuration>
-									<classifier>com.demo.testa</classifier>
-									<includes>
-										<include>**/com/demo/testa/**</include>
-									</includes>
-								</configuration>
-							</execution>
-
-							<execution>
-								<id>testb</id>
 								<goals>
-									<goal>jar</goal>
+									<goal>jar-no-fork</goal>
 								</goals>
-								<phase>package</phase>
-								<configuration>
-									<classifier>com.demo.testb</classifier>
-									<includes>
-										<include>**/com/demo/testb/**</include>
-									</includes>
-								</configuration>
 							</execution>
 						</executions>
 					</plugin>
