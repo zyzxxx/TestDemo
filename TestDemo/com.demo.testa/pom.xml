@@ -32,6 +32,17 @@
 		<url>https://github.com/zyzxxx/TestDemo</url>
 	</scm>
 
+	<build>
+		<resources>
+			<resource>
+				<directory>../target/classes/</directory>
+				<includes>
+					<include>com/demo/testa/*.class</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
 	<profiles>
 		<profile>
 			<id>release</id>
