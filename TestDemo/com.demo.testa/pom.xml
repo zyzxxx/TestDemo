@@ -48,12 +48,14 @@
 									<goal>jar-no-fork</goal>
 								</goals>
 								<configuration>
+									<outputDirectory>${project.build.directory}/classes</outputDirectory>
 									<resources>
 										<resource>
 											<directory>../target/classes/</directory>
 											<includes>
 												<include>com/demo/testa/*.class</include>
 											</includes>
+											<filtering>true</filtering>
 										</resource>
 									</resources>
 								</configuration>
