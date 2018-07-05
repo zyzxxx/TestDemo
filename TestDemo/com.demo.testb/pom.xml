@@ -32,17 +32,6 @@
 		<url>https://github.com/zyzxxx/TestDemo</url>
 	</scm>
 
-	<build>
-		<resources>
-			<resource>
-				<directory>../target/classes/</directory>
-				<includes>
-					<include>com/demo/testb/*.class</include>
-				</includes>
-			</resource>
-		</resources>
-	</build>
-
 	<profiles>
 		<profile>
 			<id>release</id>
@@ -58,6 +47,16 @@
 								<goals>
 									<goal>jar-no-fork</goal>
 								</goals>
+								<configuration>
+									<resources>
+										<resource>
+											<directory>../target/classes/</directory>
+											<includes>
+												<include>com/demo/testb/*.class</include>
+											</includes>
+										</resource>
+									</resources>
+								</configuration>
 							</execution>
 						</executions>
 					</plugin>
